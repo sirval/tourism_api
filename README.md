@@ -51,7 +51,7 @@ To run the PHPUnit test provided in this app, check `phpunit.xml` in the root di
 and make sure all is configured in the `config/database.php` in the connections array,
 1. If all are set, run `php artisan test` this makes sure we don't mess up with our main database.
 2. if all is set, you will see about 15 passed test as seen in the screenshot below.
-<a href="https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/passed_test.png" target="_blank">https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/passed_test.png</a>
+<a href="https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/passed_test.png" target="_blank"><img src="https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/passed_test.png" /></a>
 
 
 - Other details as regards to the endpoints will be shared with you via email.
