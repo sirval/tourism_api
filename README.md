@@ -59,9 +59,10 @@ Reference `.env.example` for `.env` paystack naming convention for this project.
 
 ## Running Test
 
-To run the PHPUnit test provided in this app, check `phpunit.xml` in the root directory of your project to confirm this code snippet is not commected
-    <env name="DB_CONNECTION" value="mysql_test"/>
-    <env name="DB_DATABASE" value=":tramango_test_db:"/>
+To run the PHPUnit test provided in this app, check `phpunit.xml` in the root directory of your project to confirm this code snippet is not commented or you can change to suit your need.
+
+<a href="https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/test.png" target="_blank"><img src="https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/test.png" /></a>
+
 and make sure all is configured in the `config/database.php` in the connections array,
 
 1. If all are set, run `php artisan test` this makes sure we don't mess up with our main database.
