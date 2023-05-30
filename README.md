@@ -39,9 +39,23 @@ Follow these steps to set up and install the Laravel project:
 
 8. Seed the database with initial sample data: `php artisan db:seed` This will generate roles, TravelOption.
 
-9. Start the development server: `php artisan serve`
+## Configuring Payment Gateway
 
-By default, the application will be accessible at `http://localhost:8000`.
+The payment gateway used for this test is Paystack. 
+
+To set up paystack all you need is to grab paystack credentials from you paystack dashboard <a href='https://dashboard.paystack.com/#/settings/developers' target="_blank">Here</a>. 
+
+Reference `.env.example` for `.env` paystack naming convention for this project. However, some test paystack credentials sufficient to get this project running have been provided already.
+
+- Note: This is a bad practice but was done for test purposes. All sensitive data should always be set in the `.env` file.
+
+## Serving the project
+
+- To start the server, run `php artisan serve`
+
+- To maintain the project, run `php artisan down`
+
+- To bring back project, run `php artisan up`
 
 ## Running Test
 
@@ -49,12 +63,14 @@ To run the PHPUnit test provided in this app, check `phpunit.xml` in the root di
     <env name="DB_CONNECTION" value="mysql_test"/>
     <env name="DB_DATABASE" value=":tramango_test_db:"/>
 and make sure all is configured in the `config/database.php` in the connections array,
+
 1. If all are set, run `php artisan test` this makes sure we don't mess up with our main database.
-2. if all is set, you will see about 15 passed test as seen in the screenshot below.
+2. if all are set, you will see about 15 passed test as seen in the screenshot below.
+
 <a href="https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/passed_test.png" target="_blank"><img src="https://raw.githubusercontent.com/sirval/tramango_api/main/public/files/passed_test.png" /></a>
 
 
-- Other details as regards to the endpoints will be shared with you via email.
+- Other details as regards to the endpoints in Postman will be shared with you via email.
 
 - For more Laravel commands and options, refer to the Laravel documentation.
 
